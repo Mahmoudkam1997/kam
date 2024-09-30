@@ -81,7 +81,7 @@ write.csv(as.matrix(res.deg),file="res.degs.csv", quote=F,row.names=T)
 data = read.csv("D:/res.degs.csv", row.names = 1)
 #################################
 #for symbol and gene name if it doesn't exist
-colimn(org.Hs.eg.db)
+column(org.Hs.eg.db)
 annots <- select(org.Hs.eg.db, 
                  keys=row.names(data), 
                  columns=("GENENAME"), keytype="SYMBOL")
